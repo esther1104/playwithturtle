@@ -8,4 +8,3 @@ for x in range(1,6):
     else:
         t.rt(135)
 t.done()
-        
