@@ -24,12 +24,10 @@ def get_pixel_color(x, y):
     ids = canvas.find_overlapping(x, y ,x ,y)
     if ids:
         index = ids[-1]
-        color = canvas.itemget(index, "fill")
+        color = canvas.itemcget(index, "fill")
         if color:
             return color
     return "white"
 
 t.onscreenclick(print_color)
 t.done()
-
-print("어디서 오류가 났는지 못 찾겠다")
